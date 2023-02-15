@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageId>Piot.Ecs</PackageId>
+        <Version>0.0.1</Version>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>Nullable</WarningsAsErrors>
+        <UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+        <IntermediateOutputPath>../../output</IntermediateOutputPath>
+        <RootNamespace>Piot.Ecs</RootNamespace>
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <AnalysisLevel>latest</AnalysisLevel>
+        <Copyright>Peter Bjorklund. All rights reserved.</Copyright>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="ClrHeapAllocationAnalyzer" Version="3.0.0"/>
+        <PackageReference Include="Piot.Clog" Version="0.0.1"/>
+        <PackageReference Include="Piot.Flood" Version="0.0.1"/>
+        <PackageReference Include="Piot.Blitser" Version="0.0.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\"/>
+        <PackageReference Include="ClrHeapAllocationAnalyzer" Version="3.0.0" />
+    </ItemGroup>
+
+
+</Project>
